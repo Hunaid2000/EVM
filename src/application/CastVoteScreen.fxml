@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CastVoteScreenController">
+   <children>
+      <AnchorPane prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d6f06" height="40.0" stroke="BLACK" strokeType="INSIDE" width="350.0" />
+            <Text fill="WHITE" layoutX="143.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cast Vote">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </Text>
+            <Button id="BacktoHome" fx:id="BackToHome" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#HomeButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #0d6f06; -fx-background-radius: 15;" text="Back to Home" textFill="WHITE" />
+            <Button id="Help" fx:id="Help" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="306.0" mnemonicParsing="false" onAction="#HelpPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #0d6f06; -fx-background-radius: 20;" text="Help" textFill="WHITE" />
+            <ChoiceBox id="choice" fx:id="choice" layoutX="100.0" layoutY="110.0" prefWidth="150.0" />
+            <Button id="Vote" fx:id="Vote" alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="175.0" mnemonicParsing="false" onAction="#VoteButtonPressed" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #0d6f06; -fx-background-radius: 20;" text="Vote" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

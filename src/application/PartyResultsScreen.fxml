@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PartyResultsScreenController">
+   <children>
+      <AnchorPane prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: white;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d6f06" height="40.0" stroke="BLACK" strokeType="INSIDE" width="350.0" />
+            <Text fill="WHITE" layoutX="151.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">
+               <font>
+                  <Font name="Dubai Regular" size="16.0" />
+               </font>
+            </Text>
+            <Button id="Back" fx:id="Back" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #0d6f06; -fx-background-radius: 15;" text="Back" textFill="WHITE" />
+            <TableView id="Result" fx:id="Result" layoutX="100.0" layoutY="51.0" prefHeight="243.0" prefWidth="150.0">
+              <columns>
+                  <TableColumn id="Party Name" fx:id="PartyName" prefWidth="75.0" style="-fx-alignment: center;" text="Party Name" />
+                  <TableColumn id="Votes" fx:id="PartyVotes" prefWidth="75.0" style="-fx-alignment: center;" text="Party Votes" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
